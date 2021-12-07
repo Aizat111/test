@@ -1,0 +1,86 @@
+<ion-content >
+  <ion-grid>
+    <ion-row class="ustRow">
+      <ion-col class="ustCol" size="6">
+        <div class="varlik" id="balance">
+          <h2>Баланс</h2>
+        </div>
+      </ion-col>
+      <ion-col class="ustCol" size="6">
+        <div class="varlik" id="borclar">
+          <h2>Долги </h2>
+        </div>
+
+      </ion-col>
+      
+    </ion-row>
+  
+    <ion-row clas=ortaRow style="margin-top: 50px;">
+        
+          <ion-col size="2"  class="ortaCol">
+            <div class="kurCol">
+              <button >USA</button>
+              <button>RUS</button>
+            </div>
+          </ion-col>
+        
+        
+          <ion-col size="8" id="cemberCol" >
+            cember
+          </ion-col>
+      
+        
+          <ion-col size="2" >
+            <div class="kimdenCol">
+              <button>kimden?</button>
+              <button>Kime?</button>
+            </div>
+           
+          </ion-col>
+        
+        
+      
+      
+    </ion-row>
+  
+    <!-- Default Searchbar -->
+<ion-searchbar></ion-searchbar>
+
+
+<ion-slides [options]="slideOpts">
+  <ion-slide>
+    <ion-row >
+      <ion-col size="12">
+        <div (click)="openPage()" *ngFor="let item of [].constructor(5)" class="card">
+          <div class="desc">
+            <p> 
+            kime <br>
+            Time</p>
+          </div>
+          <div class="summa">
+            <h4>Summa</h4>
+          </div>
+        </div>
+        
+      </ion-col>
+
+    </ion-row>
+  </ion-slide>
+  <ion-slide>
+    <ion-row >
+      <ion-col size="12">
+        <div (click)="openPage()" *ngFor="let item of [].constructor(5)" class="card">
+          <div class="desc">
+            <p>kimden <br>
+            Time</p>
+          </div>
+          <div class="summa">
+            <h4>Summa</h4>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-slide>
+  </ion-slides>
+  </ion-grid>
+</ion-content>
